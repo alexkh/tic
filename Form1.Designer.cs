@@ -28,20 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            cell0 = new Button();
             label1 = new Label();
+            cell0 = new Cell(5);
             SuspendLayout();
-            // 
-            // cell0
-            // 
-            cell0.Font = new Font("Segoe UI", 100F);
-            cell0.Location = new Point(12, 32);
-            cell0.Name = "cell0";
-            cell0.Size = new Size(172, 181);
-            cell0.TabIndex = 0;
-            cell0.Text = "0";
-            cell0.UseVisualStyleBackColor = true;
-            cell0.Click += cell0_Click;
             // 
             // label1
             // 
@@ -52,13 +41,21 @@
             label1.TabIndex = 1;
             label1.Text = "X's turn";
             // 
+            // cell0
+            // 
+            cell0.Location = new Point(18, 44);
+            cell0.Name = "cell0";
+            cell0.Size = new Size(132, 136);
+            cell0.TabIndex = 3;
+            cell0.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label1);
             Controls.Add(cell0);
+            Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -67,7 +64,7 @@
 
         #endregion
 
-        private Button cell0;
         private Label label1;
+        private Cell cell0;
     }
 }
