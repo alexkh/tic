@@ -41,7 +41,7 @@
             cell0.TabIndex = 0;
             cell0.Text = "0";
             cell0.UseVisualStyleBackColor = true;
-            cell0.Click += button1_Click;
+            cell0.Click += cell0_Click;
             // 
             // label1
             // 
