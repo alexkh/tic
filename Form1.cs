@@ -9,7 +9,12 @@ namespace tic
 
         private void button1_Click(object sender, EventArgs e)
         {
-            button1.Text = "X";
+            cell0.Text = "X";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

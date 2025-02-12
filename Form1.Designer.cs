@@ -28,32 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            cell0 = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
-            // button1
+            // cell0
             // 
-            button1.Location = new Point(101, 149);
-            button1.Name = "button1";
-            button1.Size = new Size(137, 113);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            cell0.Font = new Font("Segoe UI", 100F);
+            cell0.Location = new Point(12, 32);
+            cell0.Name = "cell0";
+            cell0.Size = new Size(172, 181);
+            cell0.TabIndex = 0;
+            cell0.Text = "0";
+            cell0.UseVisualStyleBackColor = true;
+            cell0.Click += button1_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(18, 10);
+            label1.Name = "label1";
+            label1.Size = new Size(47, 15);
+            label1.TabIndex = 1;
+            label1.Text = "X's turn";
+            label1.Click += label1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(label1);
+            Controls.Add(cell0);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
+        private Button cell0;
+        private Label label1;
     }
 }
