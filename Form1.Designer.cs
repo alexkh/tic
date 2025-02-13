@@ -47,7 +47,7 @@
             label1.Name = "label1";
             label1.Size = new Size(47, 15);
             label1.TabIndex = 1;
-            label1.Text = "X's turn";
+            label1.Text = "X's turn:";
             // 
             // cell0
             // 
