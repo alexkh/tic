@@ -8,12 +8,10 @@ namespace tic
 {
     internal class Cell : Button
     {
-        protected int index;
-        public Cell(int index) : base()
+        public Cell() : base()
         {
             ForeColor = Color.Blue;
             Font = new Font("Segoe UI", 70F);
-            Text = index.ToString();
         }
     }
 }

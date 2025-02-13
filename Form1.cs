@@ -6,5 +6,11 @@ namespace tic
         {
             InitializeComponent();
         }
+
+        private void cell_Click(object sender, EventArgs e)
+        {
+            Cell senderCell = (Cell)sender;
+            senderCell.Text = "X";
+        }
     }
 }
