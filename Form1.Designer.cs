@@ -168,7 +168,7 @@
             Controls.Add(cell7);
             Controls.Add(cell8);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Tic Tac Toe";
             ResumeLayout(false);
             PerformLayout();
         }
