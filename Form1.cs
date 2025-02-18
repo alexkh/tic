@@ -6,6 +6,9 @@ namespace tic
     {
         private int curo = 0; // 1 when it is O's move?
         private int board = 0; // board state
+        // board state is a packed binary
+        // 2 bits per cell from top left to bottom right
+        // value 1 for X, 2 for O, 0 for empty cell
         public Form1()
         {
             InitializeComponent();
